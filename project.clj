@@ -1,8 +1,8 @@
 (defproject lorenz "0.1.0-SNAPSHOT"
-  :description "FIXME: write description"
-  :url "http://example.com/FIXME"
-  :license {:name "Eclipse Public License"
-            :url "http://www.eclipse.org/legal/epl-v10.html"}
+  :description "a Lorenz attractor using Quil"
+  :url "https://github.com/yogthos/quil-lorenz-attractor"
+  :license {:name "MIT License"
+            :url "http://opensource.org/licenses/MIT"}
   :dependencies [[org.clojure/clojure "1.7.0-RC1"]
                  [quil "2.2.5"]
                  [org.clojure/clojurescript "0.0-3308"]]
@@ -17,7 +17,6 @@
                         :figwheel true
                         :compiler {:main "lorenz.core"
                                    :asset-path "js/out"
-				   ;:optimizations :advanced
+				                           ;:optimizations :advanced
                                    :output-to "resources/public/js/lorenz.js"
-                                   :output-dir "resources/public/js/out" }}]}
-  )
+                                   :output-dir "resources/public/js/out" }}]})
